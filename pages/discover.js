@@ -40,9 +40,7 @@ export default function Home() {
       });
   }
 
-  // debounce function to limit the number of API calls
-  // NB: @amaasare This is a solution to prevent the API from being called
-  // on every keystroke.
+  
   useEffect(() => {
     const handler = setTimeout(() => {
       setDebouncedValue(query);
@@ -53,8 +51,7 @@ export default function Home() {
     };
   }, [query]);
 
-  // NB: @amaasare This is a unsafe implementation to get filtered users
-  // from the API. Not the best approach for a production app
+  
   useEffect(() => {
     // Make API call here
     handleSearchSubmit();
