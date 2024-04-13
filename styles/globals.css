@@ -1,0 +1,126 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  font-family: "Inter", sans-serif;
+}
+
+:root {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --primary-color: #baddff;
+  --secondary-color: #000000;
+  --h1-font: 5.5rem;
+  --h2-font: 3.5rem;
+  --p-font: 1rem;
+}
+
+body {
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1000;
+  background: var(--bg-color);
+  box-shadow: 0 1px 6px 0 rgb(32 33 36/5%);
+  padding: 18px 14%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.6s;
+}
+
+.logo {
+  font-size: 33px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: var(--text-color);
+}
+
+.navlist {
+  display: flex;
+}
+
+.navlist a {
+  display: inline-block;
+  margin: 0 20px;
+  font-size: var(--p-font);
+  font-weight: 500;
+  color: var(--text-color);
+  transition: all 0.6s;
+}
+
+.navlist a:hover {
+  text-decoration: underline;
+}
+
+.sign-in {
+  text-align: center;
+}
+
+.navbtn {
+  background-color: var(--text-color);
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.navbtn:hover {
+  background-color: #0056b3;
+}
+
+main {
+  padding-top: 60px;
+}
+
+footer {
+  width: 100%;
+  background-color: var(--bg-color);
+  box-shadow: 0 1px 6px 0 rgb(32 33 36/5%);
+  padding: 18px 14%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  transition: all 0.6s;
+}
+
+section {
+  padding: 90px 14% 70px;
+}
+
+@media only screen and (max-width: 840px) {
+  header,
+  section {
+    padding: 18px 7%;
+  }
+
+  .navlist {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navlist a {
+    margin: 10px 0;
+  }
+
+  .sign-in {
+    margin-top: 20px; /* Adjust margin for better spacing */
+  }
+
+  .navbtn {
+    padding: 8px 16px; /* Adjust padding for smaller button size */
+  }
+}

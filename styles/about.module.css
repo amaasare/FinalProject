@@ -1,0 +1,54 @@
+/* Additional styles specific to the About Us page */
+.aboutSection,
+.missionSection,
+.visionSection,
+.donationSection {
+  padding: 40px; 
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.aboutSection h1,
+.missionSection h2,
+.visionSection h2,
+.donationSection h2 {
+  font-size: 2.5rem; /* Example heading font size */
+  margin-bottom: 20px;
+}
+
+.aboutSection p,
+.missionSection p,
+.visionSection p,
+.donationSection p {
+  font-size: 1.2rem; /* Example paragraph font size */
+  line-height: 1.6;
+}
+
+.donationSection strong {
+  font-weight: bold;
+  color: var(--primary-color); /* Example color for MoMo number */
+}
+
+@media only screen and (max-width: 768px) {
+  .aboutSection,
+  .missionSection,
+  .visionSection,
+  .donationSection {
+    padding: 20px; /* Adjust padding for smaller screens */
+    margin-top: 50px; /* Adjust margin top */
+  }
+
+  .aboutSection h1,
+  .missionSection h2,
+  .visionSection h2,
+  .donationSection h2 {
+    font-size: 2rem; /* Adjust heading font size */
+  }
+
+  .aboutSection p,
+  .missionSection p,
+  .visionSection p,
+  .donationSection p {
+    font-size: 1rem; /* Adjust paragraph font size */
+  }
+}

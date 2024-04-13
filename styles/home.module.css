@@ -1,0 +1,215 @@
+.home {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.homeText {
+  padding-top: 60px;
+}
+
+.homeText h1 {
+  font-size: var(--h1-font);
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.uni {
+  padding: 30px 14%;
+  background: var(--text-color);
+}
+
+.uniLogo {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.uniLogo img {
+  max-width: 200px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: 50px;
+}
+
+.centerText {
+  text-align: center;
+}
+
+.centerText h2 {
+  font-size: var(--h2-font);
+  font-weight: 700;
+}
+
+.nContent {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Adjusted to responsive grid */
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 4rem;
+}
+
+.rowImg {
+  overflow: hidden;
+  border-radius: 28px;
+  margin-bottom: 15px;
+}
+
+.rowImg img {
+  display: inline;
+  width: 100%;
+  transition: transform 0.5s;
+  cursor: pointer;
+}
+
+.rowImg img:hover {
+  transform: scale(1.1);
+}
+
+.rowIn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+
+.btn2 {
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.searchContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.searchInput {
+  width: 100%; /* Adjusted width for responsiveness */
+  max-width: 400px; /* Added max-width for larger screens */
+  height: 40px;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 20px;
+  font-size: 18px;
+  outline: none;
+}
+
+.searchInput::placeholder {
+  color: #999;
+}
+
+.searchButton {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.searchIcon {
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+}
+
+.profileContainer {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column; /* Adjusted for responsiveness */
+  align-items: center;
+  margin-bottom: 20px;
+  margin-top: 100px;
+}
+
+.avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: #ccc;
+  margin-bottom: 20px; /* Adjusted margin for better spacing */
+}
+
+.userInfo {
+  text-align: center; /* Adjusted text alignment for responsiveness */
+}
+
+.userName {
+  font-size: 35px;
+  margin-bottom: 5px;
+}
+
+.university {
+  font-size: 20px;
+  color: #666;
+}
+
+.bio h3 {
+  margin-bottom: 10px;
+  margin-top: 40px;
+  font-size: 30px;
+}
+
+.bio p {
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+@media (max-width: 1600px) {
+  .uni {
+    padding: 20px 7%;
+  }
+
+  .discover {
+    padding: 10px 7% 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .homeText {
+    padding-top: 40px; /* Adjusted padding for smaller screens */
+  }
+
+  .homeText h1 {
+    font-size: 4rem; /* Adjusted font size for smaller screens */
+    margin-bottom: 10px; /* Adjusted margin for smaller screens */
+  }
+
+  .profileContainer {
+    padding: 10px; /* Adjusted padding for smaller screens */
+  }
+
+  .avatar {
+    width: 120px; /* Adjusted avatar size for smaller screens */
+    height: 120px;
+  }
+
+  .userName {
+    font-size: 30px; /* Adjusted font size for smaller screens */
+  }
+
+  .university {
+    font-size: 18px; /* Adjusted font size for smaller screens */
+  }
+
+  .bio h3 {
+    font-size: 24px; /* Adjusted font size for smaller screens */
+    margin-top: 30px; /* Adjusted margin for smaller screens */
+  }
+
+  .bio p {
+    font-size: 16px; /* Adjusted font size for smaller screens */
+  }
+}

@@ -1,0 +1,74 @@
+.registrationForm {
+  max-width: 400px;
+  margin: 50px auto; /* Adjust the margin to center vertically */
+  padding: 20px;
+  background-color: transparent; /* Set background color to transparent */
+  border-radius: 10px;
+  display: flex; /* Use flexbox for positioning */
+}
+
+.RegImage {
+  width: 500px;
+  height: 400px;
+  margin-right: 20px;
+  margin-top: 150px;
+  margin-left: 100px;
+  float: left;
+}
+
+.formContainer {
+  flex: 1; /* Take remaining space */
+  padding: 0 20px; /* Add padding for spacing */
+}
+
+.formGroup {
+  margin-bottom: 20px;
+}
+
+.formGroup label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.formGroup input,
+.formGroup select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.registerBtn {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.registerBtn:hover {
+  background-color: #0056b3;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* height: 100vh; */
+}
+
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  .RegImage {
+    display: none;
+  }
+
+  
+}

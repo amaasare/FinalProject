@@ -1,0 +1,151 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  max-width: 320px;
+  margin-inline: auto;
+}
+
+.form button {
+  height: 40px;
+  width: 100%;
+  max-width: 320px;
+  border: none;
+  border-radius: 8px;
+  background-color: #7f56d9;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.form button:hover {
+  background-color: #6c4cc5;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.formGroup label {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.formGroup input,
+.formGroup textarea {
+  height: 40px;
+  width: 100%;
+  max-width: 320px;
+  padding: 8px 12px;
+  border: 1px solid #d0d5dd;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #101828;
+  resize: none;
+}
+
+.formGroup textarea {
+  height: initial;
+}
+
+.formGroup input::placeholder {
+  color: #667085;
+  font-size: 16px;
+}
+
+.uploadWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  height: 120px;
+  border: 1px dashed #7f56d9;
+  border-radius: 8px;
+}
+
+.uploadWrapper label {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  justify-content: center;
+  cursor: pointer;
+  align-items: center;
+  height: 100%;
+  font-weight: 400;
+}
+
+.uploadWrapper input {
+  position: absolute;
+  pointer-events: none;
+  opacity: 0;
+}
+
+.article {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  width: 100%;
+  max-width: 820px;
+  margin-inline: auto;
+  padding-top: 24px;
+}
+
+.article h1 {
+  font-size: 30px;
+  font-weight: 600;
+  color: #101828;
+}
+
+.article p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #475467;
+}
+
+.article a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-inline: 16px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #7f56d9;
+  text-decoration: none;
+  border-radius: 8px;
+  height: 40px;
+  border: 1px solid #e9d7fe;
+  width: fit-content;
+  background-color: #f9f5ff;
+  transition: all 0.3s ease;
+}
+
+.article a:hover {
+  background-color: #7f56d9;
+  border-color: #7f56d9;
+  color: #ffffff;
+}
+
+.meta {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  background-color: #eaecf0;
+}
+
+.rightAlign {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  justify-content: flex-end;
+  align-items: flex-end;
+}

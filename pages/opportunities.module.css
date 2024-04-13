@@ -1,0 +1,41 @@
+.searchContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.searchInput {
+  /* all: unset; */
+  width: 320px;
+  height: 48px;
+  padding: 12px 14px;
+  border: 1px solid #d0d5dd;
+  border-radius: 8px;
+  color: #101828;
+}
+
+.searchInput::placeholder {
+  color: #101828;
+}
+
+.oppGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-auto-rows: 200px;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.oppCard {
+  display: flex;
+  padding: 15px;
+  align-items: flex-end;
+  justify-content: flex-start;
+  border: 1px solid #eaecf0;
+  border-radius: 8px;
+  gap: 10px;
+  cursor: pointer;
+  height: 100%;
+  color: white;
+}
